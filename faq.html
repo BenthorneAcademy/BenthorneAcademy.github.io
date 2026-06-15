@@ -11,11 +11,26 @@
 
 <style>
 
+/* =========================
+   BASE RESET
+========================= */
+
 body{
   margin:0;
   font-family:Arial,sans-serif;
   background:#f4f6f9;
 }
+
+/* 防止外部CSS影响显示（关键修复） */
+section, div{
+  opacity:1 !important;
+  transform:none !important;
+  visibility:visible !important;
+}
+
+/* =========================
+   LAYOUT
+========================= */
 
 .container{
   width:90%;
@@ -23,7 +38,9 @@ body{
   margin:auto;
 }
 
-/* HEADER */
+/* =========================
+   HEADER
+========================= */
 
 header{
   background:#0d47a1;
@@ -43,7 +60,9 @@ nav a{
   text-decoration:none;
 }
 
-/* BANNER */
+/* =========================
+   BANNER
+========================= */
 
 .banner img{
   width:100%;
@@ -51,14 +70,18 @@ nav a{
   margin-top:20px;
 }
 
-/* HERO */
+/* =========================
+   HERO
+========================= */
 
 .hero{
   text-align:center;
   padding:40px 0;
 }
 
-/* FAQ LIST (NO ACCORDION) */
+/* =========================
+   FAQ (STATIC DISPLAY ONLY)
+========================= */
 
 .faq-item{
   background:#fff;
@@ -80,7 +103,9 @@ nav a{
   line-height:1.6;
 }
 
-/* CARD */
+/* =========================
+   CARD
+========================= */
 
 .card{
   background:#fff;
@@ -98,7 +123,9 @@ nav a{
   padding:20px;
 }
 
-/* BUTTON */
+/* =========================
+   BUTTON
+========================= */
 
 .btn{
   display:inline-block;
@@ -109,7 +136,9 @@ nav a{
   text-decoration:none;
 }
 
-/* FOOTER */
+/* =========================
+   FOOTER
+========================= */
 
 footer{
   text-align:center;
@@ -151,7 +180,7 @@ footer{
 </section>
 
 <!-- =========================
-     FAQ 15条（全部展开显示）
+     FAQ 15条（完全原样）
 ========================= -->
 
 <section class="container">
