@@ -1,47 +1,51 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
 <meta charset="UTF-8">
-<title>Benthorne Academy - FAQ</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>FAQ | Benthorne Academy</title>
+
+<meta name="description"
+content="Frequently Asked Questions about Benthorne Academy, our programs, learning approach, and educational services.">
+
 <link rel="stylesheet" href="css/style.css">
 
 <style>
-.faq-container {
-    width: 90%;
-    max-width: 1000px;
-    margin: auto;
-    padding: 40px 0;
+
+.faq-item{
+background:#fff;
+margin-bottom:20px;
+border-radius:15px;
+overflow:hidden;
+box-shadow:0 8px 20px rgba(0,0,0,.08);
 }
 
-.faq-item {
-    background: #ffffff;
-    margin-bottom: 15px;
-    border-radius: 12px;
-    box-shadow: 0 6px 20px rgba(0,0,0,0.08);
-    overflow: hidden;
-    transition: 0.3s ease;
+.faq-question{
+background:linear-gradient(90deg,#d7dde8,#1976d2);
+color:#fff;
+padding:20px;
+cursor:pointer;
+font-weight:600;
+font-size:18px;
 }
 
-.faq-question {
-    padding: 18px;
-    cursor: pointer;
-    font-weight: bold;
-    background: linear-gradient(90deg,#c0c0c0,#1e90ff);
-    color: white;
+.faq-answer{
+max-height:0;
+overflow:hidden;
+transition:all .4s ease;
+padding:0 20px;
+background:#fff;
 }
 
-.faq-answer {
-    display: none;
-    padding: 18px;
-    line-height: 1.7;
-    color: #1c1f2a;
-    animation: fadeIn 0.4s ease;
+.faq-answer.show{
+max-height:800px;
+padding:20px;
 }
 
-@keyframes fadeIn {
-    from {opacity:0; transform: translateY(-10px);}
-    to {opacity:1; transform: translateY(0);}
-}
 </style>
 
 </head>
@@ -49,153 +53,259 @@
 <body>
 
 <header>
+
 <div class="container">
+
+<div class="header-inner">
+
+<div class="logo-box">
+<img src="images/logo.png" alt="Benthorne Academy">
+</div>
+
 <nav>
 <a href="index.html">Home</a>
 <a href="about.html">About</a>
-<a href="service.html">Service</a>
+<a href="service.html">Services</a>
 <a href="faq.html">FAQ</a>
 <a href="contact.html">Contact</a>
 </nav>
+
 </div>
+
+</div>
+
 </header>
 
-<div class="faq-container">
+<section class="container">
 
-<h1>Frequently Asked Questions - Benthorne Academy</h1>
+<div class="banner reveal">
+<img src="images/faq-1.jpg" alt="Benthorne Academy FAQ">
+</div>
 
-<!-- 1 -->
+</section>
+
+<section class="hero reveal">
+
+<div class="container">
+
+<h1>Frequently Asked Questions</h1>
+
+<p>
+
+Find answers to the most common questions about Benthorne Academy, our educational philosophy, learning opportunities, professional development programs, and learner support services.
+
+</p>
+
+</div>
+
+</section>
+
+<section class="section reveal">
+
+<div class="container">
+
 <div class="faq-item">
-<div class="faq-question" onclick="toggleFAQ(1)">1. What is Benthorne Academy?</div>
-<div class="faq-answer" id="faq1">
-Benthorne Academy is a global education institution focused on innovation, digital transformation, and professional learning. Benthorne Academy delivers modern academic systems that integrate technology, leadership training, and real-world applications. Its mission is to prepare students for global industries through structured learning paths and advanced teaching frameworks designed for long-term success.
+<div class="faq-question">1. What is Benthorne Academy?</div>
+<div class="faq-answer">
+Benthorne Academy is a modern educational institution focused on innovation, leadership development, and lifelong learning. Benthorne Academy provides learners with access to professional education, digital learning opportunities, and practical knowledge designed to support personal and professional growth in an increasingly competitive global environment.
 </div>
 </div>
 
-<!-- 2 -->
 <div class="faq-item">
-<div class="faq-question" onclick="toggleFAQ(2)">2. Is Benthorne Academy an online institution?</div>
-<div class="faq-answer" id="faq2">
-Benthorne Academy operates primarily as a digital-first education platform while also supporting hybrid learning models. Benthorne Academy provides flexible online access to courses, allowing students worldwide to participate without geographical limitations. The system is designed for scalability, ensuring learners receive consistent quality education regardless of their location.
+<div class="faq-question">2. What educational philosophy guides Benthorne Academy?</div>
+<div class="faq-answer">
+Benthorne Academy believes that education should be practical, accessible, and future-oriented. Benthorne Academy combines academic excellence with real-world applications to help learners develop critical thinking, leadership skills, adaptability, and confidence while preparing for changing industry requirements and professional challenges.
 </div>
 </div>
 
-<!-- 3 -->
 <div class="faq-item">
-<div class="faq-question" onclick="toggleFAQ(3)">3. What programs does Benthorne Academy offer?</div>
-<div class="faq-answer" id="faq3">
-Benthorne Academy offers programs in business management, technology development, leadership training, and digital innovation. Benthorne Academy designs each curriculum based on global industry standards, ensuring learners gain practical skills. The programs are structured to support both beginners and advanced professionals seeking career advancement opportunities.
+<div class="faq-question">3. Who can join Benthorne Academy programs?</div>
+<div class="faq-answer">
+Benthorne Academy welcomes students, professionals, entrepreneurs, and lifelong learners from diverse backgrounds. Benthorne Academy programs are designed to accommodate different levels of experience, making educational opportunities accessible to individuals seeking personal enrichment or career advancement.
 </div>
 </div>
 
-<!-- 4 -->
 <div class="faq-item">
-<div class="faq-question" onclick="toggleFAQ(4)">4. Who can join Benthorne Academy?</div>
-<div class="faq-answer" id="faq4">
-Benthorne Academy welcomes students, professionals, and organizations worldwide. Benthorne Academy does not restrict access based on geography or background. Anyone interested in developing modern skills in technology, leadership, or business innovation can enroll and benefit from its structured learning ecosystem.
+<div class="faq-question">4. Does Benthorne Academy provide online learning opportunities?</div>
+<div class="faq-answer">
+Yes. Benthorne Academy utilizes modern digital learning technologies to provide flexible educational access. Benthorne Academy supports learners worldwide through online resources, self-paced learning opportunities, and interactive educational experiences that can be accessed from virtually any location.
 </div>
 </div>
 
-<!-- 5 -->
 <div class="faq-item">
-<div class="faq-question" onclick="toggleFAQ(5)">5. Is Benthorne Academy internationally recognized?</div>
-<div class="faq-answer" id="faq5">
-Benthorne Academy is built with a global education framework that aligns with international learning standards. Benthorne Academy collaborates with industry experts and academic professionals to maintain quality and relevance. Its programs are designed for global applicability across multiple industries and regions.
+<div class="faq-question">5. What areas of study are offered by Benthorne Academy?</div>
+<div class="faq-answer">
+Benthorne Academy focuses on leadership development, professional education, digital learning, innovation, workplace skills, and personal growth. Benthorne Academy continuously explores emerging educational trends to ensure learners gain relevant knowledge and practical capabilities for modern environments.
 </div>
 </div>
 
-<!-- 6 -->
 <div class="faq-item">
-<div class="faq-question" onclick="toggleFAQ(6)">6. Does Benthorne Academy provide certification?</div>
-<div class="faq-answer" id="faq6">
-Benthorne Academy provides completion certifications for its structured programs. Benthorne Academy certifications are designed to reflect skill mastery and practical knowledge gained through coursework. These certifications support learners in professional development and career progression in various industries.
+<div class="faq-question">6. How does Benthorne Academy support professional growth?</div>
+<div class="faq-answer">
+Benthorne Academy helps learners develop career-relevant skills through structured educational experiences and practical learning approaches. Benthorne Academy emphasizes communication, leadership, strategic thinking, and adaptability to help participants strengthen their professional capabilities and long-term career potential.
 </div>
 </div>
 
-<!-- 7 -->
 <div class="faq-item">
-<div class="faq-question" onclick="toggleFAQ(7)">7. How long are Benthorne Academy courses?</div>
-<div class="faq-answer" id="faq7">
-Benthorne Academy courses vary in duration depending on the program type. Benthorne Academy offers short-term intensive courses as well as long-term structured programs. Each course is designed to ensure deep understanding while maintaining flexible pacing for learners.
+<div class="faq-question">7. Are Benthorne Academy programs suitable for working professionals?</div>
+<div class="faq-answer">
+Absolutely. Benthorne Academy recognizes the demands faced by modern professionals. Many Benthorne Academy learning opportunities are designed with flexibility in mind, enabling individuals to continue their professional responsibilities while pursuing educational and personal development goals.
 </div>
 </div>
 
-<!-- 8 -->
 <div class="faq-item">
-<div class="faq-question" onclick="toggleFAQ(8)">8. What makes Benthorne Academy different?</div>
-<div class="faq-answer" id="faq8">
-Benthorne Academy stands out due to its integration of technology-driven education and real-world application models. Benthorne Academy focuses on innovation, ensuring students gain practical and relevant skills instead of purely theoretical knowledge.
+<div class="faq-question">8. What makes Benthorne Academy unique?</div>
+<div class="faq-answer">
+Benthorne Academy combines innovative educational practices, digital accessibility, and learner-centered design. Unlike traditional models, Benthorne Academy focuses on practical outcomes, continuous development, and future-ready skills that support success in dynamic and evolving environments.
 </div>
 </div>
 
-<!-- 9 -->
 <div class="faq-item">
-<div class="faq-question" onclick="toggleFAQ(9)">9. Is Benthorne Academy free?</div>
-<div class="faq-answer" id="faq9">
-Benthorne Academy may offer both free and premium learning modules depending on the program. Benthorne Academy structures its pricing to ensure accessibility while maintaining high-quality educational standards.
+<div class="faq-question">9. Does Benthorne Academy provide certificates?</div>
+<div class="faq-answer">
+Certain Benthorne Academy programs may include certificates of completion to recognize learner achievement and participation. Benthorne Academy aims to provide educational experiences that contribute to professional development and demonstrate commitment to continuous learning.
 </div>
 </div>
 
-<!-- 10 -->
 <div class="faq-item">
-<div class="faq-question" onclick="toggleFAQ(10)">10. Can I study remotely with Benthorne Academy?</div>
-<div class="faq-answer" id="faq10">
-Benthorne Academy fully supports remote learning through its digital platform. Benthorne Academy enables students to access lectures, materials, and assessments from anywhere in the world using an internet connection.
+<div class="faq-question">10. How does Benthorne Academy integrate technology into education?</div>
+<div class="faq-answer">
+Benthorne Academy embraces technology as a key component of modern learning. Benthorne Academy leverages digital resources, online learning platforms, and interactive educational tools to create engaging and accessible learning experiences for a global audience.
 </div>
 </div>
 
-<!-- 11 -->
 <div class="faq-item">
-<div class="faq-question" onclick="toggleFAQ(11)">11. Does Benthorne Academy provide mentorship?</div>
-<div class="faq-answer" id="faq11">
-Benthorne Academy provides mentorship programs guided by experienced professionals. Benthorne Academy mentors support learners in career development, academic progress, and skill improvement strategies.
+<div class="faq-question">11. Can international learners participate in Benthorne Academy programs?</div>
+<div class="faq-answer">
+Yes. Benthorne Academy welcomes international learners and promotes global engagement through accessible educational opportunities. Benthorne Academy values diverse perspectives and encourages collaboration among participants from different regions and professional backgrounds.
 </div>
 </div>
 
-<!-- 12 -->
 <div class="faq-item">
-<div class="faq-question" onclick="toggleFAQ(12)">12. How do I enroll in Benthorne Academy?</div>
-<div class="faq-answer" id="faq12">
-Benthorne Academy enrollment is done through its official online platform. Benthorne Academy provides a simple registration process where users can select programs and begin learning immediately after approval.
+<div class="faq-question">12. Does Benthorne Academy collaborate with organizations?</div>
+<div class="faq-answer">
+Benthorne Academy supports educational partnerships and workforce development initiatives. Benthorne Academy may collaborate with organizations seeking professional training, leadership development, and learning solutions that support employee growth and organizational success.
 </div>
 </div>
 
-<!-- 13 -->
 <div class="faq-item">
-<div class="faq-question" onclick="toggleFAQ(13)">13. Does Benthorne Academy support businesses?</div>
-<div class="faq-answer" id="faq13">
-Benthorne Academy offers corporate training and consulting services for organizations. Benthorne Academy helps businesses improve workforce skills, digital transformation, and operational efficiency.
+<div class="faq-question">13. What resources are available to learners at Benthorne Academy?</div>
+<div class="faq-answer">
+Benthorne Academy provides educational materials, learning support resources, digital content, and opportunities for professional development. Benthorne Academy continually expands learning resources to help participants achieve meaningful educational outcomes.
 </div>
 </div>
 
-<!-- 14 -->
 <div class="faq-item">
-<div class="faq-question" onclick="toggleFAQ(14)">14. Is Benthorne Academy safe and reliable?</div>
-<div class="faq-answer" id="faq14">
-Benthorne Academy operates with secure digital infrastructure and professional academic standards. Benthorne Academy ensures data protection and reliable access to all educational services.
+<div class="faq-question">14. How can I stay informed about Benthorne Academy updates?</div>
+<div class="faq-answer">
+You can stay informed about Benthorne Academy by following official social media channels, monitoring website announcements, and engaging with academy communications. Benthorne Academy regularly shares educational insights, news, and updates relevant to learners and stakeholders.
 </div>
 </div>
 
-<!-- 15 -->
 <div class="faq-item">
-<div class="faq-question" onclick="toggleFAQ(15)">15. Where is Benthorne Academy located?</div>
-<div class="faq-answer" id="faq15">
-Benthorne Academy is based at 100 Pine St, San Francisco, California, 94111, while operating globally through its digital education platform. Benthorne Academy serves learners worldwide without physical limitations.
+<div class="faq-question">15. How can I contact Benthorne Academy?</div>
+<div class="faq-answer">
+Benthorne Academy can be contacted through the official Contact page, by email at support@bsofllc.com, or through its social media platforms. Benthorne Academy welcomes inquiries regarding programs, partnerships, educational opportunities, and general information.
 </div>
 </div>
 
 </div>
+
+</section>
+
+<section class="section reveal">
+
+<div class="container">
+
+<div class="card">
+<img src="images/faq-2.jpg" alt="Learner Support">
+<div class="card-content">
+<h3>Learner Support</h3>
+<p>Benthorne Academy is committed to supporting learners through educational guidance, professional development resources, and a learner-centered environment designed to encourage long-term success.</p>
+</div>
+</div>
+
+</div>
+
+</section>
+
+<section class="section reveal">
+
+<div class="container">
+
+<div class="card">
+<img src="images/faq-3.jpg" alt="Learning Resources">
+<div class="card-content">
+<h3>Learning Resources</h3>
+<p>Benthorne Academy provides access to modern learning tools, educational content, and digital resources that help learners strengthen knowledge, develop skills, and pursue continuous improvement.</p>
+</div>
+</div>
+
+</div>
+
+</section>
+
+<section class="section reveal">
+
+<div class="container">
+
+<div class="content-box">
+
+<h2>Still Have Questions?</h2>
+
+<p>
+
+If you need additional information about Benthorne Academy, our educational services, or partnership opportunities, please contact our team. We are always happy to assist.
+
+</p>
+
+<br>
+
+<a href="contact.html" class="btn">
+Contact Us
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<footer>
+<div class="container">
+<h3>Benthorne Academy</h3>
+<p>© 2026 Benthorne Academy. All Rights Reserved.</p>
+</div>
+</footer>
+
+<button id="topBtn">↑</button>
 
 <script>
-function toggleFAQ(id){
-    var el = document.getElementById("faq"+id);
-    if(el.style.display === "block"){
-        el.style.display = "none";
-    } else {
-        el.style.display = "block";
-    }
+
+const faqQuestions=document.querySelectorAll(".faq-question");
+
+faqQuestions.forEach(question=>{
+
+question.addEventListener("click",()=>{
+
+const answer=question.nextElementSibling;
+
+document.querySelectorAll(".faq-answer").forEach(item=>{
+
+if(item!==answer){
+item.classList.remove("show");
 }
+
+});
+
+answer.classList.toggle("show");
+
+});
+
+});
+
 </script>
 
 </body>
 </html>
+```
