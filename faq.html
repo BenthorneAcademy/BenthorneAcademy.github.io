@@ -5,16 +5,11 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>FAQ | Benthorne Academy v2.2</title>
+<title>FAQ | Benthorne Academy</title>
 
 <link rel="stylesheet" href="css/style.css">
 
 <style>
-
-/* =========================
-   BASE FIX (IMPORTANT)
-   解决你“只显示头尾”的核心问题
-========================= */
 
 body{
   margin:0;
@@ -28,15 +23,7 @@ body{
   margin:auto;
 }
 
-/* ❗关键修复：禁止 reveal 隐藏内容 */
-.reveal{
-  opacity:1 !important;
-  transform:none !important;
-}
-
-/* =========================
-   HEADER
-========================= */
+/* HEADER */
 
 header{
   background:#0d47a1;
@@ -56,9 +43,7 @@ nav a{
   text-decoration:none;
 }
 
-/* =========================
-   BANNER
-========================= */
+/* BANNER */
 
 .banner img{
   width:100%;
@@ -66,73 +51,36 @@ nav a{
   margin-top:20px;
 }
 
-/* =========================
-   HERO
-========================= */
+/* HERO */
 
 .hero{
   text-align:center;
   padding:40px 0;
 }
 
-/* =========================
-   FAQ
-========================= */
+/* FAQ LIST (NO ACCORDION) */
 
 .faq-item{
   background:#fff;
   margin-bottom:15px;
   border-radius:12px;
   box-shadow:0 6px 18px rgba(0,0,0,0.08);
-  overflow:hidden;
+  padding:20px;
 }
 
-/* question */
 .faq-question{
-  background:linear-gradient(90deg,#0d47a1,#1976d2);
-  color:#fff;
-  padding:18px 20px;
-  cursor:pointer;
-  font-weight:600;
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
+  font-weight:700;
+  color:#0d47a1;
+  margin-bottom:10px;
+  font-size:18px;
 }
 
-.faq-question:hover{
-  opacity:0.9;
-}
-
-.faq-question.active{
-  background:linear-gradient(90deg,#08306b,#1565c0);
-}
-
-/* arrow */
-.faq-question::after{
-  content:"⌄";
-  transition:0.3s;
-}
-
-.faq-question.active::after{
-  transform:rotate(180deg);
-}
-
-/* answer */
 .faq-answer{
-  max-height:0;
-  overflow:hidden;
-  transition:max-height 0.4s ease, padding 0.3s ease;
-  padding:0 20px;
+  color:#333;
+  line-height:1.6;
 }
 
-.faq-answer.show{
-  max-height:1200px;
-  padding:18px 20px;
-}
-
-/* =========================
-   CARD
-========================= */
+/* CARD */
 
 .card{
   background:#fff;
@@ -150,9 +98,7 @@ nav a{
   padding:20px;
 }
 
-/* =========================
-   BUTTON
-========================= */
+/* BUTTON */
 
 .btn{
   display:inline-block;
@@ -163,9 +109,7 @@ nav a{
   text-decoration:none;
 }
 
-/* =========================
-   FOOTER
-========================= */
+/* FOOTER */
 
 footer{
   text-align:center;
@@ -203,11 +147,11 @@ footer{
 
 <section class="hero container">
   <h1>Frequently Asked Questions</h1>
-  <p>Find answers about Benthorne Academy, programs, and services.</p>
+  <p>All answers about Benthorne Academy</p>
 </section>
 
 <!-- =========================
-     FAQ 15条完整保留版
+     FAQ 15条（全部展开显示）
 ========================= -->
 
 <section class="container">
@@ -257,7 +201,7 @@ Through structured learning programs focused on communication, leadership, and s
 <div class="faq-item">
 <div class="faq-question">7. Are programs suitable for professionals?</div>
 <div class="faq-answer">
-Yes, flexible schedules support working professionals.
+Yes, programs are designed to fit working professionals' schedules.
 </div>
 </div>
 
@@ -306,7 +250,7 @@ Digital learning materials, training content, and professional support resources
 <div class="faq-item">
 <div class="faq-question">14. How to stay updated?</div>
 <div class="faq-answer">
-Follow official channels and website updates.
+Follow official channels and website updates regularly.
 </div>
 </div>
 
@@ -319,9 +263,7 @@ Via contact page, email support@bsofllc.com, or social media platforms.
 
 </section>
 
-<!-- =========================
-     SUPPORT CARDS
-========================= -->
+<!-- SUPPORT -->
 
 <section class="container">
 
@@ -329,7 +271,7 @@ Via contact page, email support@bsofllc.com, or social media platforms.
 <img src="images/faq-2.jpg">
 <div class="card-content">
 <h3>Learner Support</h3>
-<p>We provide guidance and support for all learners.</p>
+<p>We provide guidance and resources for all learners.</p>
 </div>
 </div>
 
@@ -351,36 +293,6 @@ Via contact page, email support@bsofllc.com, or social media platforms.
 <footer>
 <p>© 2026 Benthorne Academy</p>
 </footer>
-
-<!-- =========================
-     FIXED JS (v2.2)
-========================= -->
-
-<script>
-
-document.querySelectorAll(".faq-question").forEach(item=>{
-  item.addEventListener("click",()=>{
-
-    const answer=item.nextElementSibling;
-    const isOpen=answer.classList.contains("show");
-
-    document.querySelectorAll(".faq-answer").forEach(a=>{
-      a.classList.remove("show");
-    });
-
-    document.querySelectorAll(".faq-question").forEach(q=>{
-      q.classList.remove("active");
-    });
-
-    if(!isOpen){
-      answer.classList.add("show");
-      item.classList.add("active");
-    }
-
-  });
-});
-
-</script>
 
 </body>
 </html>
