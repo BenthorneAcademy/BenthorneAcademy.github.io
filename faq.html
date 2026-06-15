@@ -12,163 +12,167 @@
 <style>
 
 /* =========================
-   BASE LAYOUT
+   BASE FIX (IMPORTANT)
+   解决你“只显示头尾”的核心问题
 ========================= */
 
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background: #f4f6f9;
+body{
+  margin:0;
+  font-family:Arial,sans-serif;
+  background:#f4f6f9;
 }
 
-.container {
-  width: 90%;
-  max-width: 1100px;
-  margin: auto;
+.container{
+  width:90%;
+  max-width:1100px;
+  margin:auto;
+}
+
+/* ❗关键修复：禁止 reveal 隐藏内容 */
+.reveal{
+  opacity:1 !important;
+  transform:none !important;
 }
 
 /* =========================
    HEADER
 ========================= */
 
-header {
-  background: #0d47a1;
-  color: #fff;
-  padding: 15px 0;
+header{
+  background:#0d47a1;
+  color:#fff;
+  padding:15px 0;
 }
 
-.header-inner {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.header-inner{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
 }
 
-nav a {
-  color: #fff;
-  margin-left: 15px;
-  text-decoration: none;
+nav a{
+  color:#fff;
+  margin-left:15px;
+  text-decoration:none;
 }
 
 /* =========================
    BANNER
 ========================= */
 
-.banner img {
-  width: 100%;
-  border-radius: 10px;
-  margin-top: 20px;
+.banner img{
+  width:100%;
+  border-radius:10px;
+  margin-top:20px;
 }
 
 /* =========================
    HERO
 ========================= */
 
-.hero {
-  text-align: center;
-  padding: 40px 0;
+.hero{
+  text-align:center;
+  padding:40px 0;
 }
 
 /* =========================
-   FAQ CARD
+   FAQ
 ========================= */
 
-.faq-item {
-  background: #fff;
-  margin-bottom: 15px;
-  border-radius: 12px;
-  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
-  overflow: hidden;
+.faq-item{
+  background:#fff;
+  margin-bottom:15px;
+  border-radius:12px;
+  box-shadow:0 6px 18px rgba(0,0,0,0.08);
+  overflow:hidden;
 }
 
-/* QUESTION */
-.faq-question {
-  background: linear-gradient(90deg, #0d47a1, #1976d2);
-  color: #fff;
-  padding: 18px 20px;
-  cursor: pointer;
-  font-weight: 600;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  transition: 0.3s;
+/* question */
+.faq-question{
+  background:linear-gradient(90deg,#0d47a1,#1976d2);
+  color:#fff;
+  padding:18px 20px;
+  cursor:pointer;
+  font-weight:600;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
 }
 
-.faq-question:hover {
-  opacity: 0.9;
+.faq-question:hover{
+  opacity:0.9;
 }
 
-.faq-question.active {
-  background: linear-gradient(90deg, #08306b, #1565c0);
+.faq-question.active{
+  background:linear-gradient(90deg,#08306b,#1565c0);
 }
 
-/* ARROW */
-.faq-question::after {
-  content: "⌄";
-  font-size: 18px;
-  transition: transform 0.3s ease;
+/* arrow */
+.faq-question::after{
+  content:"⌄";
+  transition:0.3s;
 }
 
-.faq-question.active::after {
-  transform: rotate(180deg);
+.faq-question.active::after{
+  transform:rotate(180deg);
 }
 
-/* ANSWER */
-.faq-answer {
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.4s ease, padding 0.3s ease;
-  padding: 0 20px;
-  background: #fff;
+/* answer */
+.faq-answer{
+  max-height:0;
+  overflow:hidden;
+  transition:max-height 0.4s ease, padding 0.3s ease;
+  padding:0 20px;
 }
 
-.faq-answer.show {
-  padding: 18px 20px;
-  max-height: 1000px;
+.faq-answer.show{
+  max-height:1200px;
+  padding:18px 20px;
 }
 
 /* =========================
-   CARD SECTION
+   CARD
 ========================= */
 
-.card {
-  background: #fff;
-  border-radius: 12px;
-  overflow: hidden;
-  margin-top: 20px;
-  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+.card{
+  background:#fff;
+  margin-top:20px;
+  border-radius:12px;
+  overflow:hidden;
+  box-shadow:0 6px 18px rgba(0,0,0,0.08);
 }
 
-.card img {
-  width: 100%;
+.card img{
+  width:100%;
 }
 
-.card-content {
-  padding: 20px;
+.card-content{
+  padding:20px;
 }
 
 /* =========================
    BUTTON
 ========================= */
 
-.btn {
-  display: inline-block;
-  padding: 12px 20px;
-  background: #1976d2;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 8px;
+.btn{
+  display:inline-block;
+  padding:12px 20px;
+  background:#1976d2;
+  color:#fff;
+  border-radius:8px;
+  text-decoration:none;
 }
 
 /* =========================
    FOOTER
 ========================= */
 
-footer {
-  text-align: center;
-  padding: 30px;
-  margin-top: 40px;
-  background: #0d47a1;
-  color: #fff;
+footer{
+  text-align:center;
+  padding:30px;
+  margin-top:40px;
+  background:#0d47a1;
+  color:#fff;
 }
 
 </style>
@@ -180,7 +184,7 @@ footer {
 <header>
 <div class="container header-inner">
   <div class="logo-box">
-    <img src="images/logo.png" alt="logo" height="40">
+    <img src="images/logo.png" height="40">
   </div>
 
   <nav>
@@ -199,106 +203,183 @@ footer {
 
 <section class="hero container">
   <h1>Frequently Asked Questions</h1>
-  <p>Everything you need to know about Benthorne Academy.</p>
+  <p>Find answers about Benthorne Academy, programs, and services.</p>
 </section>
 
-<!-- FAQ -->
+<!-- =========================
+     FAQ 15条完整保留版
+========================= -->
+
 <section class="container">
 
-<!-- 1 -->
 <div class="faq-item">
-  <div class="faq-question">What is Benthorne Academy?</div>
-  <div class="faq-answer">
-    Benthorne Academy is a modern education platform focused on leadership, innovation, and lifelong learning.
-  </div>
+<div class="faq-question">1. What is Benthorne Academy?</div>
+<div class="faq-answer">
+Benthorne Academy is a modern educational institution focused on innovation, leadership development, and lifelong learning. It provides professional education and digital learning opportunities for global learners.
+</div>
 </div>
 
-<!-- 2 -->
 <div class="faq-item">
-  <div class="faq-question">Who can join?</div>
-  <div class="faq-answer">
-    Students, professionals, and lifelong learners worldwide can join our programs.
-  </div>
+<div class="faq-question">2. What educational philosophy guides Benthorne Academy?</div>
+<div class="faq-answer">
+Benthorne Academy believes education should be practical, accessible, and future-oriented, combining theory with real-world applications.
+</div>
 </div>
 
-<!-- 3 -->
 <div class="faq-item">
-  <div class="faq-question">Do you offer online courses?</div>
-  <div class="faq-answer">
-    Yes, we provide flexible online learning accessible globally.
-  </div>
+<div class="faq-question">3. Who can join Benthorne Academy programs?</div>
+<div class="faq-answer">
+Students, professionals, entrepreneurs, and lifelong learners from all backgrounds are welcome.
+</div>
 </div>
 
-<!-- 4 -->
 <div class="faq-item">
-  <div class="faq-question">Do you provide certificates?</div>
-  <div class="faq-answer">
-    Yes, selected programs include certificates of completion.
-  </div>
+<div class="faq-question">4. Does Benthorne Academy provide online learning?</div>
+<div class="faq-answer">
+Yes, flexible online learning is available globally through digital platforms.
+</div>
 </div>
 
-<!-- 5 -->
 <div class="faq-item">
-  <div class="faq-question">Is it suitable for professionals?</div>
-  <div class="faq-answer">
-    Yes, many programs are designed for working professionals.
-  </div>
+<div class="faq-question">5. What areas of study are offered?</div>
+<div class="faq-answer">
+Leadership, innovation, digital skills, workplace development, and personal growth programs.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="faq-question">6. How does Benthorne Academy support career growth?</div>
+<div class="faq-answer">
+Through structured learning programs focused on communication, leadership, and strategic thinking.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="faq-question">7. Are programs suitable for professionals?</div>
+<div class="faq-answer">
+Yes, flexible schedules support working professionals.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="faq-question">8. What makes Benthorne Academy unique?</div>
+<div class="faq-answer">
+A focus on practical outcomes, innovation, and future-ready skills.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="faq-question">9. Do you provide certificates?</div>
+<div class="faq-answer">
+Some programs include certificates of completion.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="faq-question">10. How is technology integrated?</div>
+<div class="faq-answer">
+Through online platforms, interactive tools, and digital learning systems.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="faq-question">11. Can international learners join?</div>
+<div class="faq-answer">
+Yes, global participation is fully supported.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="faq-question">12. Do you collaborate with organizations?</div>
+<div class="faq-answer">
+Yes, partnerships for training and workforce development are supported.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="faq-question">13. What resources are available?</div>
+<div class="faq-answer">
+Digital learning materials, training content, and professional support resources.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="faq-question">14. How to stay updated?</div>
+<div class="faq-answer">
+Follow official channels and website updates.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="faq-question">15. How to contact Benthorne Academy?</div>
+<div class="faq-answer">
+Via contact page, email support@bsofllc.com, or social media platforms.
+</div>
 </div>
 
 </section>
 
-<!-- SUPPORT CARDS -->
-<section class="container">
-  <div class="card">
-    <img src="images/faq-2.jpg">
-    <div class="card-content">
-      <h3>Learner Support</h3>
-      <p>We support learners with resources and guidance for success.</p>
-    </div>
-  </div>
+<!-- =========================
+     SUPPORT CARDS
+========================= -->
 
-  <div class="card">
-    <img src="images/faq-3.jpg">
-    <div class="card-content">
-      <h3>Learning Resources</h3>
-      <p>Modern tools and materials for continuous improvement.</p>
-    </div>
-  </div>
+<section class="container">
+
+<div class="card">
+<img src="images/faq-2.jpg">
+<div class="card-content">
+<h3>Learner Support</h3>
+<p>We provide guidance and support for all learners.</p>
+</div>
+</div>
+
+<div class="card">
+<img src="images/faq-3.jpg">
+<div class="card-content">
+<h3>Learning Resources</h3>
+<p>Modern tools and materials for continuous improvement.</p>
+</div>
+</div>
+
 </section>
 
 <section class="container hero">
-  <h2>Still have questions?</h2>
-  <a class="btn" href="contact.html">Contact Us</a>
+<h2>Still have questions?</h2>
+<a class="btn" href="contact.html">Contact Us</a>
 </section>
 
 <footer>
-  <p>© 2026 Benthorne Academy</p>
+<p>© 2026 Benthorne Academy</p>
 </footer>
 
-<!-- JS (FIXED VERSION) -->
+<!-- =========================
+     FIXED JS (v2.2)
+========================= -->
+
 <script>
-document.querySelectorAll(".faq-question").forEach(item => {
-  item.addEventListener("click", () => {
 
-    const answer = item.nextElementSibling;
-    const isOpen = answer.classList.contains("show");
+document.querySelectorAll(".faq-question").forEach(item=>{
+  item.addEventListener("click",()=>{
 
-    // close all
-    document.querySelectorAll(".faq-answer").forEach(a => {
+    const answer=item.nextElementSibling;
+    const isOpen=answer.classList.contains("show");
+
+    document.querySelectorAll(".faq-answer").forEach(a=>{
       a.classList.remove("show");
     });
 
-    document.querySelectorAll(".faq-question").forEach(q => {
+    document.querySelectorAll(".faq-question").forEach(q=>{
       q.classList.remove("active");
     });
 
-    // open current
-    if (!isOpen) {
+    if(!isOpen){
       answer.classList.add("show");
       item.classList.add("active");
     }
+
   });
 });
+
 </script>
 
 </body>
