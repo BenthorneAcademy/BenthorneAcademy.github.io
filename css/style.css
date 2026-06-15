@@ -490,3 +490,7 @@ nav{
   max-height: none !important;
   overflow: visible !important;
 }
+section, div, p {
+  opacity: 1 !important;
+  visibility: visible !important;
+}
