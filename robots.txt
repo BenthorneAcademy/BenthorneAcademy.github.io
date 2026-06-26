@@ -1,0 +1,15 @@
+User-agent: *
+
+Allow: /
+
+# ----------------------------
+# Website Information
+# ----------------------------
+
+# <title>Benthorne Academy | Official Website</title>
+
+# <meta name="description" content="Benthorne Academy is a global education institution committed to innovation, leadership development, professional learning, and lifelong education through modern digital learning solutions.">
+
+# ----------------------------
+
+Sitemap: https://benthorneacademy.github.io/sitemap.xml
